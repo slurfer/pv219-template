@@ -1,0 +1,11 @@
+services:
+  server:
+    container_name: server
+    restart: always
+    image: pv219
+    env_file:
+      - .env
+    ports:
+      - 8000:8000
+    environment:
+      - PORT=8000
